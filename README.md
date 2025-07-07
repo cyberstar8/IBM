@@ -6,23 +6,8 @@
 * **Permasalahan:** Mengorganisir dan mengekstrak wawasan yang berarti dari volume besar teks ulasan yang tidak terstruktur.
 * **Pendekatan:** Melakukan tahapan awal eksplorasi data, termasuk pengunduhan, pemuatan, dan inspeksi struktur data ulasan.
 
-## Proses Analisis
-
-Proses analisis data dilakukan melalui langkah-langkah berikut:
-
-1.  **Pengunduhan Dataset:**
-    * Dataset `amazon-product-reviews` diunduh dari KaggleHub menggunakan `kagglehub.dataset_download()`.
-    * File utama yang digunakan adalah `Reviews.csv`.
-2.  **Pemuatan Data:**
-    * File `Reviews.csv` dimuat ke dalam Pandas DataFrame untuk manipulasi data yang efisien.
-    * Dilakukan penanganan `FileNotFoundError` untuk memastikan robust-nya proses.
-3.  **Eksplorasi Data Awal:**
-    * Menampilkan beberapa baris pertama dari DataFrame lengkap (`df.head()`) untuk memahami semua kolom yang tersedia (`Id`, `ProductId`, `UserId`, `ProfileName`, `HelpfulnessNumerator`, `HelpfulnessDenominator`, `Score`, `Time`, `Summary`, `Text`).
-4.  **Pemilihan Kolom Relevan:**
-    * Membuat subset DataFrame (`df_subset`) yang hanya menyertakan kolom kunci untuk analisis ulasan: `ProductId`, `ProfileName`, `Score`, `Summary`, `Text`.
-    * Menampilkan 10 baris pertama dari `df_subset` untuk verifikasi.
-5.  **Pengurutan Data:**
-    * Data di dalam `df_subset` diurutkan berdasarkan `ProductId` untuk memudahkan analisis atau agregasi ulasan per produk.
+## Raw Dataset Link
+https://www.kaggle.com/datasets/arhamrumi/amazon-product-reviews
 
 ## Insight & Findings 
 **Untuk Pembeli :**
